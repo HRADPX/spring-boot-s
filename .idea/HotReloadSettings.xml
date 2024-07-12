@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="org.jetbrains.sdk.hotreload.remote.HotReloadSettingsState">
+    <option name="chosenHostProcess" value="public-bjzey-rs9-kce-node190.idczw.hb1.kwaidc.com 2512105 eptool.jar -t diff -projectId 44089 -commitId 66eccdf5 -diffFile commit_diff.txt -cid 1205889 -dest diff_commit.json null null " />
+    <option name="hostSearchField" value="" />
+    <option name="kwsFilterText" value="" />
+    <option name="processSearchField" value="" />
+    <option name="selectedHostname" value="public-bjzey-rs9-kce-node190.idczw.hb1.kwaidc.com" />
+    <option name="selectedKcsInstance" value="cloud-2727380-1226782-1089626-2-deploy-756dd498c7-559dm 337 /home/web_server/kuaishou-runner/webapps/locallife-platform-user-service-runner.jar -p 21418 locallife-platformuser-activityencourage-consumer-task PROD_REGRESSION_TEST -Xss1M -XX:InitialRAMPercentage=50 -XX:MaxRAMPercentage=50 -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=2g -XX:ReservedCodeCacheSize=720M -XX:MaxDirectMemorySize=2g -XX:-UseBiasedLocking -XX:+ParallelRefProcEnabled -XX:+UseContainerSupport -XX:+UseStringDeduplication -XX:-OmitStackTraceInFastThrow -XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 -Djava.library.path=/usr/local/lib -XX:+UseG1GC -Xlog:gc*=info,safepoint=info::time,tags,tid -XX:InitiatingHeapOccupancyPercent=45 -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=30 -DMY_POD_NAME=cloud-2727380-1226782-1089626-2-deploy-756dd498c7-559dm -DLOG_HOME=/home/web_server/kuaishou-runner/logs/cloud-2727380-1226782-1089626-2-deploy-756dd498c7-559dm -XX:OnOutOfMemoryError=/opt/kbox/latest/dropin/notify_oome -DdisablePerfAgent=true -DIGNORE_EVENTLISTENER_LAZYBEAN=true -XX:-PreserveFramePointer -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:21425 -DDEBUG_FORWARD_PORT=31425 -Xverify:none -XX:+IgnoreUnrecognizedVMOptions -javaagent:/home/web_server/jacoco/jacocoagent.jar=output=tcpserver,append=true,port=21424,excludes=com.kuaishou.admin.model.SourcePage.*:com.kuaishou.admin.model.SourcePage:,includes=com.kuaishou.platform.user.* -Dmain-class=com.kuaishou.platform.user.runner.rocketmq.UserCoinConsumer" />
+    <option name="selectedKcsLaneId" value="PRT.profile_hasOrder" />
+    <option name="selectedKcsStage" value="PROD_REGRESSION_TEST" />
+    <option name="selectedKwsName" value="locallife-platformuser-activityencourage-consumer-task" />
+  </component>
+</project>

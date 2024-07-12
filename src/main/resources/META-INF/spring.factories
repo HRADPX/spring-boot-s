@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationListener=\
+    com.kuaishou.springboot.listener.AdditionalProfileApplicationListener
+
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#    com.kuaishou.config.DeferredImportSelectorConfiguration

@@ -1,0 +1,48 @@
+package com.kuaishou.springboot.code.dp;
+
+import java.util.Arrays;
+
+import com.kuaishou.springboot.code.utils.ReflectUtils;
+
+/**
+ * @author huangran <huangran@kuaishou.com>
+ * Created on 2023-07-24
+ *
+ * leetcode 516 删除最少的字符使之成为最长的回文串行
+ * leetcode 1312 插入最少的字符使之成为最长的回文串行
+ */
+public class MinInsertions_1312 {
+
+    // 向字符串中插入最少字符使之成为回文串
+    public int minInsertions(String s) {
+
+        if (s.length() <= 1) return s.length();
+
+        char[] cs = s.toCharArray();
+        int[][] dp = new int[cs.length][cs.length];
+
+        for (int i = 1; i < cs.length; i++) {
+            for (int j = i - 1; j >= 0; j--) {
+
+                if (i - j <= 1 && cs[i] == cs[j])
+                    continue;
+                if (i - j <= 1 && cs[i] != cs[j])
+                    dp[j][i] = Math.min(dp[j][i - 1], dp[j + 1][i]) + 1;
+                else if (cs[i] == cs[j])
+                    dp[j][i] = Math.min(dp[j + 1][i - 1], Math.min(dp[j][i - 1], dp[j + 1][i]) + 1);
+                else
+                    dp[j][i] = Math.min(dp[j + 1][i - 1] + 2, Math.min(dp[j][i - 1], dp[j + 1][i]) + 1);
+
+            }
+        }
+        for (int[] ints : dp)
+            System.out.println(Arrays.toString(ints));
+
+        return dp[0][cs.length - 1];
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(ReflectUtils.getInstance(MinInsertions_1312.class).minInsertions("zzazz"));
+    }
+}
